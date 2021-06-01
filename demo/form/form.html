@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>html example ~ form basics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="heading">form</h1>
+  <form action="/form-submit">
+
+    <div class="example-1">
+      <label for="example-1">example-1 label</label>
+
+      <input id="example-1" type="text" placeholder="example-1 input">
+    </div>
+
+
+    <div class="example-2">
+      <label>
+        example-2 label
+        <input type="text" placeholder="example-2 input">
+      </label>
+
+    </div>
+
+    <h3>input types</h3>
+    <div class="example-3">
+      <!-- input types -->
+      <input type="text" placeholder="type=text">
+      <input type="email" placeholder="type=email" autocomplete="on">
+      <input type="password" placeholder="type=text">
+      <input type="number" placeholder="type=number">
+      <input type="file" value="type=file">
+      <input type="checkbox">
+      <a href="https://www.w3schools.com/html/html_form_input_types.asp"> -> See here for more types</a>
+    </div>
+
+    <h3>form control</h3>
+    <div class="example-4">
+      <!-- form control -->
+      <input type="text" maxlength="10" placeholder="maxlength=10">
+      <input type="text" required placeholder="required*">
+      <input type="text" disabled placeholder="disabled">
+      <input type="number" placeholder="type=number min=0 max=10" min="0" max="10">
+    </div>
+
+    <div class="submit-buttons">
+      <input class="normal" type="submit" value="normal submit"></input>
+      <input class="post" type="submit" value="post method"></input>
+      <input class="no-validation" type="submit" value="no validation" formnovalidate></input>
+      <input class="custom-action" type="submit" value="custom action"></input>
+    </div>
+  </form>
+
+  <div class="footer-links">
+    <a href="/">top</a>
+    <a href="/form.html">form example</a>
+    <a href="/elements.html">elements example</a>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

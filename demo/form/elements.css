@@ -1,0 +1,10 @@
+iframe {
+  /* example.com */
+  width: 100vw;
+  height: 300px;
+}
+
+video {
+  width: 100vw;
+  object-fit: cover;
+}

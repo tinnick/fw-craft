@@ -1,0 +1,28 @@
+@import 'normalize.css';
+@import 'forms.css';
+@import 'elements.css';
+
+html {
+  font-size: 16px;
+}
+
+body {
+  width: 100vw;
+}
+
+.heading {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: solid 2px black;
+}
