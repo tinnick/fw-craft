@@ -2,6 +2,7 @@
 @import 'forms.css';
 @import 'elements.css';
 @import 'box-model.css';
+@import 'css-and-javascript.css';
 
 html {
   font-size: 16px;
