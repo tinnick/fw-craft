@@ -28,3 +28,10 @@ body {
   align-items: center;
   border-top: solid 2px black;
 }
+
+/* top page */
+.base-layout {
+  margin: 60px 10vw;
+  width: 80vw;
+  object-fit: cover;
+}
