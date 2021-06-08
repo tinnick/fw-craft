@@ -1,0 +1,28 @@
+Div{
+ Width:1500px;
+ Height:300%;
+ Font-size:20px;
+ Text-align:center;
+ Line-height:50px;
+ Color:#fff;
+}
+.heading{
+ Color: #ff0000;
+}
+.base-layout{
+ Color: rgba(26, 167, 177, 0.8);
+}
+.footer-links{
+ Background-color: hsla(240, 100%, 50%, .4);
+}
+
+Footer{
+ Width: 100%;
+ Background-color: #89c7de;
+ Color: #fff;
+ Text-align: center;
+ Padding: 30px 0;
+
+ Position: absolute;
+ Bottom: 0;
+}
