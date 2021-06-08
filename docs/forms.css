@@ -1,0 +1,79 @@
+form {
+  width: 80vw;
+  margin: auto;
+}
+
+label {
+  display: block;
+  width: 100%;
+  background-color: #E040FB40;
+  cursor: pointer;
+}
+
+input:not([type="submit"]) {
+  background-color: #2979FF40;
+  box-sizing: border-box;
+}
+
+.example-1 {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.example-1 label {
+  height: 2rem;
+  margin-bottom: 1rem;
+  display: grid;
+  place-items: center;
+}
+
+.example-1 input {
+  width: 100%;
+  height: 2rem;
+}
+
+.example-2 {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.example-2 label {
+  height: 5rem;
+  display: grid;
+  place-items: center;
+}
+
+.example-2 label input {
+  width: 80%;
+  height: 2rem;
+}
+
+.example-3 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.example-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.example-4 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+input[type="submit"] {
+  margin: auto;
+}
+
+.submit-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+

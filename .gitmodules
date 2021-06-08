@@ -1,0 +1,3 @@
+[submodule "docs/page-js"]
+	path = docs/page-js
+	url = https://github.com/tinnick/fw-craft.js.git
