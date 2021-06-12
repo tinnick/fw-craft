@@ -42,7 +42,7 @@ function selectChoice(userChoice) {
   const userChoiceElement = document.querySelector('.user-choice');
   const computerChoiceElement = document.querySelector('.computer-choice');
 
-  // KADAI
+  // 課題 3-01
   const computerChoice = getComputerChoice(); /* -> jankenChoiceEnum */
 
   if (!userChoiceElement || !computerChoiceElement) {
@@ -52,7 +52,7 @@ function selectChoice(userChoice) {
   userChoiceElement.replaceChild(templates[userChoice](), userChoiceElement.firstElementChild);
   computerChoiceElement.replaceChild(templates[computerChoice](), computerChoiceElement.firstElementChild);
 
-  // KADAI
+  // 課題 3-02
   const winner = JanKenPon(userChoice, computerChoice);
 
   if (winner === ActorEnum.USER) {
@@ -77,21 +77,23 @@ function selectChoice(userChoice) {
 }
 
 function resetCount() {
-  // KADAI
+  // 課題 3-03
 
   resultTextElement.innerText = 'CHOOSE A HAND';
 }
 
-function JanKenPon(userChoice, computerChoice) /* -> ActorEnum.USER | ActorEnum.COMPUTER */ {
+function JanKenPon(userChoice, computerChoice) /* -> ActorEnum.USER | ActorEnum.COMPUTER | null */ {
   // handle jankenpon
 
-  // KADAI
+  // 課題 3-02
+  return null;
 }
 
 function getComputerChoice() /* -> jankenChoiceEnum */ {
-  // KADAI
+  // 課題 3-01
 }
 
+// ここから下は気にしなくて良き
 async function testComputerChoiceRatio() {
 
   const choices = {
