@@ -1,0 +1,21 @@
+{
+  "name": "kadai-2",
+  "version": "1.0.0",
+  "license": "ISC",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "example": "http-server example/ --port 3001"
+  },
+  "devDependencies": {
+    "sass": "^1.34.1",
+    "typescript": "^4.2.3",
+    "vite": "^2.3.5",
+    "http-server": "^0.12.3"
+  },
+  "dependencies": {
+    "@types/d3": "^6.7.0",
+    "d3": "^6.7.0"
+  }
+}

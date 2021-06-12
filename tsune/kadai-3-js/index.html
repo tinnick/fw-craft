@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+
+    <!-- link rel="stylesheet" href="src/styles/base.module.scss" -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Pangolin&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="rock-paper-scissors">
+      <div class="rules">
+        <div class="rules-image">
+          <img src="src/assets/images/rules.jpg" alt="how to play">
+        </div>
+      </div>
+
+      <div class="choice-selection">
+        <div class="choice choice__rock">
+          <img src="src/assets/images/hand-rock-filled-red.svg" alt="rock">
+        </div>
+
+        <div class="choice choice__scissor">
+          <img src="src/assets/images/hand-scissor-filled-red.svg" alt="scissor">
+        </div>
+
+        <div class="choice choice__paper">
+          <img src="src/assets/images/hand-paper-filled-red.svg" alt="paper">
+        </div>
+      </div>
+
+      <div class="janken">
+        <div class="janken-result">
+          <div class="win-count">0</div>
+          <div class="result-text">CHOOSE A HAND</div>
+          <div class="lose-count">0</div>
+        </div>
+
+        <div class="janken-choices">
+          <div class="user-choice">
+            <div><!-- replaced! --></div>
+          </div>
+
+          <div class="computer-choice">
+            <div><!-- replaced! --></div>
+          </div>
+        </div>
+      </div>
+
+      <button class="reset-count">RESET</button>
+
+      <div class="opponent-ratio__title">OPPONENT HAND RATIO</div>
+      <div class="opponent-ratio__graph"></div>
+
+
+      <template class="rock-template">
+        <img class="rock" src="src/assets/images/hand-rock-filled-red.svg" alt="rock">
+      </template>
+
+      <template class="scissor-template">
+        <img class="scissor" src="src/assets/images/hand-scissor-filled-red.svg" alt="scissor">
+      </template>
+
+      <template class="paper-template">
+        <img class="paper" src="src/assets/images/hand-paper-filled-red.svg" alt="paper">
+      </template>
+
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+    <!-- script src="https://d3js.org/d3.v6.min.js"></script -->
+    <!-- script src="/src/main.ts"></script -->
+  </body>
+</html>

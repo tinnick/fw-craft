@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.17e50649.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+
+    <!-- link rel="stylesheet" href="src/styles/base.module.scss" -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Pangolin&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/assets/index.f6e81e29.js"></script>
+  <link rel="modulepreload" href="/assets/vendor.e19ff174.js">
+  <link rel="stylesheet" href="/assets/index.8b043233.css">
+</head>
+  <body>
+
+    <div class="rock-paper-scissors">
+      <div class="rules">
+        <div class="rules-image">
+          <img src="/assets/rules.4b407fee.jpg" alt="how to play">
+        </div>
+      </div>
+
+      <div class="choice-selection">
+        <div class="choice choice__rock">
+          <img src="/assets/hand-rock-filled-red.3b28121b.svg" alt="rock">
+        </div>
+
+        <div class="choice choice__scissor">
+          <img src="/assets/hand-scissor-filled-red.4711de8e.svg" alt="scissor">
+        </div>
+
+        <div class="choice choice__paper">
+          <img src="/assets/hand-paper-filled-red.9408de6e.svg" alt="paper">
+        </div>
+      </div>
+
+      <div class="janken">
+        <div class="janken-result">
+          <div class="win-count">0</div>
+          <div class="result-text">CHOOSE A HAND</div>
+          <div class="lose-count">0</div>
+        </div>
+
+        <div class="janken-choices">
+          <div class="user-choice">
+            <div><!-- replaced! --></div>
+          </div>
+
+          <div class="computer-choice">
+            <div><!-- replaced! --></div>
+          </div>
+        </div>
+      </div>
+
+      <button class="reset-count">RESET</button>
+
+      <div class="opponent-ratio__title">OPPONENT HAND RATIO</div>
+      <div class="opponent-ratio__graph"></div>
+
+
+      <template class="rock-template">
+        <img class="rock" src="/assets/hand-rock-filled-red.3b28121b.svg" alt="rock">
+      </template>
+
+      <template class="scissor-template">
+        <img class="scissor" src="/assets/hand-scissor-filled-red.4711de8e.svg" alt="scissor">
+      </template>
+
+      <template class="paper-template">
+        <img class="paper" src="/assets/hand-paper-filled-red.9408de6e.svg" alt="paper">
+      </template>
+
+    </div>
+
+    
+    <!-- script src="https://d3js.org/d3.v6.min.js"></script -->
+    <!-- script src="/src/main.ts"></script -->
+  </body>
+</html>
