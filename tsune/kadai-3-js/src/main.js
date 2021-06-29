@@ -84,13 +84,35 @@ function resetCount() {
 
 function JanKenPon(userChoice, computerChoice) /* -> ActorEnum.USER | ActorEnum.COMPUTER | null */ {
   // handle jankenpon
-
   // 課題 3-02
+	let userJankenNb;
+	let computerJankenNb;
+
+	if (userChoice === jankenChoiceEnum.ROCK)
+		userJankenNb = 0;
+	else if (userChoice === jankenChoiceEnum.SCISSOR)
+		userJankenNb = 1;
+	else if (userChoice === jankenChoiceEnum.PAPER)
+		userJankenNb = 2;
+
+	if (computerChoice === jankenChoiceEnum.ROCK)
+		computerJankenNb = 0;
+	else if (computerChoice === jankenChoiceEnum.SCISSOR)
+		computerJankenNb = 1;
+	else if (computerChoice === jankenChoiceEnum.PAPER)
+		computerJankenNb = 2;
+
+
   return null;
 }
 
 function getComputerChoice() /* -> jankenChoiceEnum */ {
   // 課題 3-01
+	let aryKeys = Object.keys(jankenChoiceEnum);
+	let index = aryKeys[Math.floor(Math.random() * aryKeys.length)];
+
+	console.log('index :' + index);
+	return jankenChoiceEnum[index];
 }
 
 // ここから下は気にしなくて良き
