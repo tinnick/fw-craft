@@ -77,9 +77,10 @@ function selectChoice(userChoice) {
 }
 
 function resetCount() {
-  // 課題 3-03
-
-  resultTextElement.innerText = 'CHOOSE A HAND';
+	// 課題 3-03
+    winCountElement.innerText = String(0);
+    loseCountElement.innerText = String(0);
+	resultTextElement.innerText = 'CHOOSE A HAND';
 }
 
 function JanKenPon(userChoice, computerChoice) /* -> ActorEnum.USER | ActorEnum.COMPUTER | null */ {
@@ -101,9 +102,25 @@ function JanKenPon(userChoice, computerChoice) /* -> ActorEnum.USER | ActorEnum.
 		computerJankenNb = 1;
 	else if (computerChoice === jankenChoiceEnum.PAPER)
 		computerJankenNb = 2;
+	
+	// (userJankenNb - computerJankenNb + 3) % 3 という計算式で結果を取得
+	difference = userJankenNb - computerJankenNb;
+	result = (difference + 3) % 3;
 
+	switch (result) {
+			// USER won
+		case 2:
+			return ActorEnum.USER
+			break;
+			// USER lost
+		case 1:
+			return ActorEnum.COMPUTER
+			break;
+			// TIE
+		case 0:
+			return null;
+	}
 
-  return null;
 }
 
 function getComputerChoice() /* -> jankenChoiceEnum */ {
