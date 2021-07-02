@@ -43,7 +43,7 @@ function selectChoice(userChoice) {
   const computerChoiceElement = document.querySelector('.computer-choice');
 
   // 課題 3-01
-  const computerChoice = getComputerChoice(); /* -> jankenChoiceEnum */
+  const computerChoice = getComputerChoice(); /* -> JankenChoiceEnum */
 
   if (!userChoiceElement || !computerChoiceElement) {
     return;
@@ -89,23 +89,23 @@ function JanKenPon(userChoice, computerChoice) /* -> ActorEnum.USER | ActorEnum.
 	let userJankenNb;
 	let computerJankenNb;
 
-	if (userChoice === jankenChoiceEnum.ROCK)
+	if (userChoice === JankenChoiceEnum.ROCK)
 		userJankenNb = 0;
-	else if (userChoice === jankenChoiceEnum.SCISSOR)
+	else if (userChoice === JankenChoiceEnum.SCISSOR)
 		userJankenNb = 1;
-	else if (userChoice === jankenChoiceEnum.PAPER)
+	else if (userChoice === JankenChoiceEnum.PAPER)
 		userJankenNb = 2;
 
-	if (computerChoice === jankenChoiceEnum.ROCK)
+	if (computerChoice === JankenChoiceEnum.ROCK)
 		computerJankenNb = 0;
-	else if (computerChoice === jankenChoiceEnum.SCISSOR)
+	else if (computerChoice === JankenChoiceEnum.SCISSOR)
 		computerJankenNb = 1;
-	else if (computerChoice === jankenChoiceEnum.PAPER)
+	else if (computerChoice === JankenChoiceEnum.PAPER)
 		computerJankenNb = 2;
 	
 	// (userJankenNb - computerJankenNb + 3) % 3 という計算式で結果を取得
-	difference = userJankenNb - computerJankenNb;
-	result = (difference + 3) % 3;
+	let difference = userJankenNb - computerJankenNb;
+	let result = (difference + 3) % 3;
 
 	switch (result) {
 			// USER won
@@ -117,19 +117,19 @@ function JanKenPon(userChoice, computerChoice) /* -> ActorEnum.USER | ActorEnum.
 			return ActorEnum.COMPUTER
 			break;
 			// TIE
-		case 0:
+	case 0:
 			return null;
 	}
 
 }
 
-function getComputerChoice() /* -> jankenChoiceEnum */ {
+function getComputerChoice() /* -> JankenChoiceEnum */ {
   // 課題 3-01
-	let aryKeys = Object.keys(jankenChoiceEnum);
+	let aryKeys = Object.keys(JankenChoiceEnum);
 	let index = aryKeys[Math.floor(Math.random() * aryKeys.length)];
 
-	console.log('index :' + index);
-	return jankenChoiceEnum[index];
+	console.log('index : ' + index);
+	return JankenChoiceEnum[index];
 }
 
 // ここから下は気にしなくて良き
